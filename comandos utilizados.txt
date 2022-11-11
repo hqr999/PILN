@@ -1,0 +1,43 @@
+apt-get update
+apt search openjdk
+
+
+mkdir -p /usr/share/man/man1
+sudo apt install openjdk-11-jdk
+
+
+wget https://builds.openlogic.com/downloadJDK/openlogic-openjdk/8u262-b10/openlogic-openjdk-8u262-b10-linux-x64.tar.gz
+
+
+tar -xvzf openlogic-openjdk-8u262-b10-linux-x64.tar.gz
+
+cd openlogic-openjdk-8u262-b10-linux-64/
+cd bin
+pwd
+
+-> 
+/root/work/LigacaoCogroo/openlogic-openjdk-8u262-b10-linux-64/bin
+copiar /\
+
+
+sudo vim /etc/profile
+
+export JAVA_HOME="/root/work/LigacaoCogroo/openlogic-openjdk-8u262-b10-linux-64"
+export PATH=$PATH:$JAVA_HOME/bin
+
+update-alternatives --config java
+
+sudo update-alternatives --install "/usr/bin/java" "java" "/root/work/LigacaoCogroo/openlogic-openjdk-8u262-b10-linux-64/bin/java" 1
+
+sudo update-alternatives --config java
+
+sudo update-alternatives --config javac
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/root/work/LigacaoCogroo/openlogic-openjdk-8u262-b10-linux-64/bin/javac" 1
+sudo update-alternatives --config javac
+
+
+python setup.py install
+java -jar cogroo4py.jar
+
+
+link do video: https://www.youtube.com/watch?v=u-6s7osqRvY

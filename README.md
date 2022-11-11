@@ -5,4 +5,4 @@ Nesse repositório se encontra o artigo científico que é produto do trabalho f
  
  -OBS:Crie dois repositórios chamados:negativo_polarizado e positivo_polarizado, para que a última célula do notebook teste funcione.
  
- -OBS2:
+ -OBS2:Se quiser usar o etiquetador Cogroo no DeepNote,você precisará fazer alguns comandos em um prompt do DeepNote,esse arquivo com as intruções também se encontra aqui. Caso não consiga, recomendo replicar esse notebook no Google Collab.

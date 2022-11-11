@@ -12,3 +12,4 @@ sub-corpus, o corpus de polaridade positiva que possuía críticas 4,5 e 5, e um
 negativa que possuía críticas de 2,5 para baixo,a montagem foi dessa maneira, isso porque
 assim poderíamos encontrar diferenças mais acentuadas entre eles, o que permitiria construir
 um algoritmos de diferenciação entre as críticas no futuro.
+Nesse repositório se encontra o artigo científico que é produto do trabalho final.
